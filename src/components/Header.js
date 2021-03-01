@@ -1,3 +1,7 @@
+// images
+import userIco from '../userIco.png';
+import cartIco from '../cartIco.png';
+
 function Header() {
     return (
         <header>
@@ -7,7 +11,7 @@ function Header() {
             </h1>
             
             {/* navegation menu */}
-            <nav>
+            <nav class="store-navegation">
                 <ul>
                     <li>
                         <a href="/roupas/Masculino?map=c,specificationFilter_26">masculino</a>
@@ -26,9 +30,18 @@ function Header() {
             
             {/* input search */}
             <input type="text" placeholder="Digite sua busca aqui" class="search-input" />
-
-            <button class="login-btn"></button>
-            <button class="cart-btn"></button>
+            
+            {/* some user options */}
+            <nav class="user-options">
+                <ul>
+                    <li class="login-btn">
+                        <img alt="opções do usuário" src={userIco} />
+                    </li>
+                    <li class="cart-btn">
+                        <img alt="carrinho do usuário" src={cartIco} />
+                    </li>
+                </ul>
+            </nav>          
         </header>
     )
 };
