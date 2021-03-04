@@ -1,6 +1,6 @@
 import freeChangeIco from '../freeChangeIco.png';
 
-function FreeChangeProduct() {
+function FreeChangeProduct(){
     return (
         <article class="free-change-bar">
             <p>

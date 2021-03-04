@@ -1,0 +1,160 @@
+.header-top {
+    position: sticky;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.header-top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+}
+
+.header-logo-hummel {
+    margin-right: 20px;
+}
+
+.header-container-left {
+    display: flex;
+    width: 47%;
+    align-items: center;
+}
+
+.header-container-right {
+    display: flex;
+    width: 39%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-store-navegation ul {
+    display: flex;
+}
+
+.header-store-navegation ul li {
+    margin: 0 15px;
+}
+
+.header-store-navegation ul li a {
+    text-transform: uppercase;
+    color: #000;
+    padding: 31px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header-store-navegation ul li a:after {
+    bottom: 25px;
+    content: "";
+    width: 0;
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    background: #000;
+    -webkit-transition: width .3s ease 0s,left .3s ease 0s;
+    -o-transition: width .3s ease 0s,left .3s ease 0s;
+    -moz-transition: width .3s ease 0s,left .3s ease 0s;
+    transition: width .3s ease 0s,left .3s ease 0s;
+}
+
+.header-store-navegation ul li a:hover:after {
+    width: 100%;
+}
+
+.header-search-input {
+    height: 46px;
+    line-height: 50px;
+    padding-left: 45px;
+    width: 100%;
+    max-width: 268px;
+    color: #000;
+    border: 1px solid #dbdbdb;
+    font-size: 12px;
+    font-weight: 600;
+    background: url(../searchIco.svg) left center no-repeat;
+    background-position: 15px;
+}
+
+.header-search-input:focus {
+    outline: none;
+    border: 1px solid #dbdbdb;
+}
+
+.header-user-options {
+    width: 18%;
+}
+
+.header-user-options ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-user-options ul li:first-child {
+    margin-right: 15%;
+}
+
+.header-user-options ul li a img {
+    width: 100%;
+    min-width: 26px;
+    max-width: 26px;
+    height: auto;
+}
+
+#menu-ico, .search-btn {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #menu-ico {
+        display: block;
+        width: 37px;
+        margin-right: 5px;
+    }
+
+    .header-top .container {
+        width: 95%;
+        height: 64px;
+    }
+
+    .header-store-navegation {
+        background-color: red;
+        position: absolute;
+        left: -400px;
+    }
+
+    .header-store-navegation ul {
+        display: flex;
+    }
+
+    .header-container-right {
+        display: flex;
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-btn {
+        display: none;
+    }
+
+    .search-btn {
+        display: block;
+        width: 25px;
+        margin-right: 10px;
+        padding-top: 3px;
+    }
+
+    .header-container-left {
+        width: 50%;
+    }
+
+    .header-container-right {
+        width: 50%;
+    }
+
+    .header-search-input {
+        display: none;
+    }
+}
